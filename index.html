@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Upload</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body class="container" ng-controller="myCtrl">
+    <div class="file-upload">
+	    <div class="form-group">
+		    <label for="exampleInputFile">File input</label>
+		    <input type="file" id="exampleInputFile" file-model="myFile">
+		 </div>
+        <button type="button" class="btn btn-primary" ng-click="uploadFile()">Upload</button>
+    </div>
+</body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js"></script>
+<script src="myapp.js"></script>
+</html>
